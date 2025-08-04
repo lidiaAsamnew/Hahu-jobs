@@ -11,23 +11,19 @@
         </NuxtLink>
       </div>
 
-    
-       <div class="hidden md:flex items-center">
-        <div class="flex items-center space-x-6 text-base font-medium">
+      <div class="hidden md:flex items-center">
+        <div class="flex items-center space-x-4 text-xs font-medium">
           <NuxtLink to="/" class="nav-link">Home</NuxtLink>
           <NuxtLink to="/about" class="nav-link">About</NuxtLink>
           <NuxtLink to="/jobs" class="nav-link">Jobs</NuxtLink>
           <NuxtLink to="/post-vacancy" class="nav-link text-teal-600 font-semibold">Post Vacancy</NuxtLink>
           <NuxtLink to="/contact" class="nav-link flex items-center gap-x-2">Contact</NuxtLink>
-        </div>
-
-        <div class="flex items-center space-x-4 pl-8 ml-8 border-l border-gray-200">
           <button class="text-gray-500 hover:text-teal-600 focus:outline-none" aria-label="Toggle dark mode">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></svg>
           </button>
-          <NuxtLink to="/login" class="bg-[#14B8A6] text-white text-sm font-semibold px-6 py-2 rounded-md hover:bg-teal-700">Login</NuxtLink>
+          <NuxtLink to="/login" class="bg-[#14B8A6] text-white text-xs font-semibold px-3 py-1 rounded-md hover:bg-teal-700">Login</NuxtLink>
           <span class="text-gray-500 text-sm">or</span>
-          <NuxtLink to="/signup" class="bg-[#14B8A6] text-white text-sm font-semibold px-6 py-2 rounded-md hover:bg-teal-700">Sign up</NuxtLink>
+          <NuxtLink to="/signup" class="bg-[#14B8A6] text-white text-xs font-semibold px-3 py- rounded-md hover:bg-teal-700">Sign up</NuxtLink>
         </div>
       </div>
       
