@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-white shadow-sm sticky top-0 z-50">
+  <header class="bg-[#F0F5F7] shadow-sm sticky top-0 z-50">
     <nav class="container mx-auto px-4 lg:px-8 py-3 flex justify-between items-center">
 
       <div class="flex items-center">
@@ -23,7 +23,7 @@
           </button>
           <NuxtLink to="/login" class="bg-[#14B8A6] text-white text-xs font-semibold px-3 py-1 rounded-md hover:bg-teal-700">Login</NuxtLink>
           <span class="text-gray-500 text-sm">or</span>
-          <NuxtLink to="/signup" class="bg-[#14B8A6] text-white text-xs font-semibold px-3 py- rounded-md hover:bg-teal-700">Sign up</NuxtLink>
+          <NuxtLink to="/signup" class="bg-[#14B8A6] text-white text-xs font-semibold px-3 py-1 rounded-md hover:bg-teal-700">Sign up</NuxtLink>
         </div>
       </div>
       
