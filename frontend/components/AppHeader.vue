@@ -19,7 +19,7 @@
           <NuxtLink to="/post-vacancy" class="nav-link text-teal-600 font-semibold">Post Vacancy</NuxtLink>
           <NuxtLink to="/contact" class="nav-link flex items-center gap-x-2">Contact</NuxtLink>
           <button class="text-gray-500 hover:text-teal-600 focus:outline-none" aria-label="Toggle dark mode">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></svg>
+            <Icon name="heroicons:moon" class="h-5 w-5" />
           </button>
           <NuxtLink to="/login" class="bg-[#14B8A6] text-white text-xs font-semibold px-3 py-1 rounded-md hover:bg-teal-700">Login</NuxtLink>
           <span class="text-gray-500 text-sm">or</span>
