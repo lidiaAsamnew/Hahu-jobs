@@ -1,0 +1,16 @@
+[
+  { "id": 1, "name": "Natural Science", "jobCount": 25, "image": "/natural-science.svg", "link": "#" },
+  { "id": 2, "name": "Business", "jobCount": 210, "image": "/business.svg", "link": "#" },
+  { "id": 3, "name": "Creative Arts", "jobCount": 6, "image": "/creative-art.svg", "link": "#" },
+  { "id": 4, "name": "Education", "jobCount": 109, "image": "/education.svg", "link": "#" },
+  { "id": 5, "name": "Hospitality", "jobCount": 28, "image": "/hospitality.svg", "link": "#" },
+  { "id": 6, "name": "L and M Skilled", "jobCount": 62, "image": "low-and-medium-skilled-worker.svg", "link": "#" },
+  { "id": 7, "name": "Transportation", "jobCount": 32, "image": "/transport-and-logistics.svg", "link": "#" },
+  { "id": 8, "name": "Engineering", "jobCount": 134, "image": "/engineering.svg", "link": "#" },
+  { "id": 9, "name": "Finance", "jobCount": 133, "image": "/finance.svg", "link": "#" },
+  { "id": 10, "name": "Legal Services", "jobCount": 8, "image": "/legal-service.svg", "link": "#" },
+  { "id": 11, "name": "ICT", "jobCount": 46, "image": "/ict.svg", "link": "#" },
+  { "id": 12, "name": "Health Care", "jobCount": 62, "image": "/health-care.svg", "link": "#" },
+  { "id": 13, "name": "Manufacturing", "jobCount": 1, "image": "/manufacturing.svg", "link": "#" },
+  { "id": 14, "name": "Social Science", "jobCount": 30, "image": "/social-science.svg", "link": "#" }
+]
