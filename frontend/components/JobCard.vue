@@ -1,7 +1,6 @@
 <template>
-  <div class="group relative bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 text-left border border-gray-100 hover:border-green-700 flex flex-col">
+  <div class="group relative bg-white rounded-lg shadow-md hover:shadow-sm transition-shadow duration-300 text-left border border-gray-100 hover:border-2 hover:border-teal-600 flex flex-col">
 
-   
     <div class="flex justify-between items-center">
       <span class="mt-1 text-sm text-gray-500 flex items-center gap-x-1.5">
         <Icon name="uil:calendar-alt" class="h-4 w-4" />
@@ -15,57 +14,59 @@
       </div>
     </div>
 
-
-    <div class="flex gap-x-6 px-6 pt-6">
+    <div class="flex gap-x-5">
    
-      <div class="flex flex-col items-center">
+      <div class="flex flex-col items-center pt-14  px-2">
         <img :src="job.companyLogo" :alt="job.companyName" class="w-16 h-16 rounded-md border p-1 object-contain" />
         <p class="text-sm text-gray-500 mt-2 text-center">{{ job.companyName }}</p>
       </div>
 
-      <div class="flex-1">
+      <div class="flex-1 pt-2">
         <h3 class="text-md font-bold text-gray-800 leading-tight mb-2">{{ job.title }}</h3>
         <ul class="space-y-1 text-sm text-gray-600">
           <li class="flex items-center gap-x-1">
-            <Icon name="uil:briefcase-alt" class="h-5 w-5 text-gray-400" />
+            <Icon name="uil:briefcase-alt" class="h-5 w-5 text-teal-600" />
             <span>{{ job.category }}</span>
           </li>
+           <li class="py-1 flex items-center gap-x-1">
+            <Icon name="uil:corner-down-right" class="h-5 w-5 text-teal-600" />
+            <span>{{ job.category}}</span>
+          </li>
           <li class="flex items-center gap-x-1">
-            <Icon name="uil:map-marker" class="h-5 w-5 text-gray-400" />
+            <Icon name="uil:map-marker" class="h-5 w-5 text-teal-600" />
             <span>{{ job.location }}</span>
           </li>
           <li class="flex items-center gap-x-1">
-            <Icon name="uil:bag" class="h-5 w-5 text-gray-400" />
+            <Icon name="uil:bag" class="h-5 w-5 text-teal-600" />
             <span>{{ job.experience }} years</span>
           </li>
           <li class="flex items-center gap-x-1">
-            <Icon name="uil:users-alt" class="h-5 w-5 text-gray-400" />
+            <Icon name="uil:users-alt" class="h-5 w-5 text-teal-600" />
             <span>{{ job.positions }} Positions</span>
           </li>
         </ul>
       </div>
     </div>
 
-
-    <div class="px-6 pt-4 py-2">
-      <div class="inline-flex items-center gap-x-2 bg-teal-600 text-white text-sm font-semibold px-4 py-1.5 rounded-full">
+    <div class="flex justify-center py-5">
+      <div class="inline-flex items-center gap-x-2 bg-teal-600 text-white text-sm font-semibold px-2 py-1 rounded-full">
         <Icon name="uil:clock" class="h-3 w-3" />
         <span>{{ job.type }}</span>
       </div>
     </div>
 
-
-    <p class="border-t px-6 pt-4 text-sm text-gray-600 leading-relaxed line-clamp-2">
-      {{ job.description }}
-    </p>
-
+    <div class="px-6">
+      <p class="border-t pt-4 text-sm text-gray-600 leading-relaxed line-clamp-3">
+        {{ job.description }}
+      </p>
+    </div>
    
-    <div class="px-6 pb-5 mt-auto flex justify-between items-center">
-      <div class="flex items-center gap-x-2">
-        <button class="bg-gray-100 text-gray-700 font-semibold py-1.5 px-3 rounded-md hover:bg-gray-200">
+    <div class="px-6 pb-5 pt-5 mt-auto flex justify-center items-center">
+      <div class="flex items-center gap-x-3">
+        <button class="bg-gray-100 text-gray-700 text-sm font-semibold py-1 px-2 rounded-md hover:bg-gray-200">
           Read More
         </button>
-        <button class="bg-teal-500 text-white font-semibold py-1.5 px-3 rounded-md hover:bg-teal-600">
+        <button class="bg-teal-500 text-white text-sm font-semibold py-1 px-2 rounded-md hover:bg-teal-600">
           Apply Now
         </button>
       </div>
