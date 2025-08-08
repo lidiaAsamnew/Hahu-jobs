@@ -4,9 +4,15 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   modules: [
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/color-mode',
+    '@nuxt/icon',
+    'vue3-carousel-nuxt',
+    'nuxt-marquee',
   ],
-
+  colorMode: {
+      classSuffix: ''
+  },
   css: [
     '~/assets/css/main.css',
   ],
