@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "image": "/photo2.jpeg",
+    "tag": "News",
+    "date": "15 March 2025",
+    "title": "Empowering the Next Generation: The Launch of the Champions Network",
+    "description": "On the 22nd, the STEEP Project proudly launched the Champions Network, an initiative designed to empower girls to become leaders in Science, Technology, Engineering, and Mathematics (STEM). The launch was a moment, filled with enthusiasm and a shared..."
+  },
+  {
+    "id": 2,
+    "image": "/steep_kokebe_thumbinail_image.webp",
+    "tag": "HaHuJobs News",
+    "date": "29 March 2025",
+    "title": "A Day of Inspiration and Discovery: STEM Career Fair at Kokebe Tsibah High School",
+    "description": "On Saturday, March 29, 2025, Kokebe Tsibah High School in Addis Ababa buzzed with excitement as we hosted a transformative STEM career fair under the STEEP (STEM Education for Empowerment Project) initiative. This event, meticulously planned and executed, brought together high..."
+  },
+  {
+    "id": 3,
+    "image": "/steep_women_day_thumbinail_image.webp",
+    "tag": "HaHuJobs",
+    "date": "8 March 2025",
+    "title": "Celebrating International Women's Day: Inspiring Inclusion",
+    "description": "On March 8th, HaHuJobs, in collaboration with the U.S. Embassy in Addis Ababa, hosted a vibrant celebration for International Women's Day 2025, embracing this year's theme: 'Inspire Inclusion' for women and girls."
+  },
+  {
+    "id": 4,
+    "image": "/photo2.jpeg",
+    "tag": "News",
+    "date": "15 March 2025",
+    "title": "Another Great Event for the Future Generation",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  }
+]
