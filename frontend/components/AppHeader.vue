@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-[#F0F5F7] shadow-sm sticky top-0 z-50">
+  <header class="bg-[#F0F5F7] shadow-sm sticky top-0 z-50 dark:bg-slate-800 dark:text-white">
     <nav class="container mx-auto px-4 lg:px-8 py-3 flex justify-between items-center">
 
       <div class="flex items-center">
@@ -18,8 +18,15 @@
           <NuxtLink to="/jobs" class="nav-link">Jobs</NuxtLink>
           <NuxtLink to="/post-vacancy" class="nav-link text-teal-600 font-semibold">Post Vacancy</NuxtLink>
           <NuxtLink to="/contact" class="nav-link flex items-center gap-x-2">Contact</NuxtLink>
-          <button class="text-gray-500 hover:text-teal-600 focus:outline-none" aria-label="Toggle dark mode">
-            <Icon name="heroicons:moon" class="h-5 w-5" />
+          <button
+            class="text-gray-500 hover:text-teal-600 focus:outline-none"
+            aria-label="Toggle dark mode"
+            @click="setColorTheme(useColorMode().preference === 'dark' ? 'light' : 'dark')"
+          >
+            <Icon
+              :name="useColorMode().preference === 'dark' ? 'heroicons:sun' : 'heroicons:moon'"
+              class="h-4 w-4"
+            />
           </button>
           <NuxtLink to="/login" class="bg-[#14B8A6] text-white text-xs font-semibold px-3 py-1 rounded-md hover:bg-teal-700">Login</NuxtLink>
           <span class="text-gray-500 text-sm">or</span>
@@ -53,5 +60,9 @@
 }
 </style>
 
-<script setup>
+<script setup lang ="ts">
+type Theme = 'light' | 'dark';
+const setColorTheme = (newTheme: Theme) => {
+  useColorMode().preference = newTheme;
+};
 </script>

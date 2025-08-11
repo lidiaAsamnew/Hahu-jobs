@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#F0F5F7]">
+  <div class="bg-[#F0F5F7] dark:bg-slate-800 dark:text-white">
     <section class="text-center pt-12 pb-20 px-4">
       <div class="container mx-auto">
         <h1 class="text-4xl md:text-3xl font-bold text-gray-800">All Ethiopian Jobs in One Place.</h1>
@@ -77,7 +77,7 @@
             >
               <Slide v-for="job in jobs" :key="job.id">
                 <div class="px-2 sm:px-4 h-full">
-                  <JobCard :job="job" class="h-full" />
+                  <JobCard :job="job" class="h-full dark:bg-slate-800" />
                 </div>
               </Slide>
 
@@ -96,7 +96,7 @@
        </div>
       </div>
     </section>
-    <section class="py-8 bg-[#F0F5F7] px-16">
+    <section class="py-8 bg-[#F0F5F7] px-16  dark:bg-slate-800 dark:text-white">
         <div class="mx-auto w-full">
           <div class="text-center mb-12">
             <h2 class="text-3xl font-bold text-gray-800">Career sectors</h2>
@@ -115,7 +115,7 @@
               class="px-1.5 mb-5"
               style="flex: 0 0 16.6667%; max-width: 16.6667%;"
             >
-              <SectorCard :sector="sector" />
+              <SectorCard :sector="sector" class="dark:bg-slate-800" />
             </div>
           </div>
         </div>
@@ -134,11 +134,12 @@
               v-for="service in services" 
               :key="service.id"
               :service="service"
+              class="dark:bg-slate-800"
             />
           </div>
         </div>
       </section>
-      <section class="py-10 bg-teal-50">
+      <section class="py-10 bg-teal-50 dark:bg-slate-800 dark:text-white">
       <div class="container mx-auto">
         <div class="text-center mb-12 px-4">
           <h2 class="text-3xl font-bold text-gray-800">HaHuJobs top posting companies</h2>
@@ -159,12 +160,13 @@
             v-for="company in topCompanies"
             :key="company.id"
             :company="company"
+            class="dark:bg-slate-800"
           />
         </NuxtMarquee>
 
       </div>
     </section>
-    <section class="bg-gray-100">
+    <section class="bg-gray-100 dark:bg-slate-800 dark:text-white">
       <div class="py-12">
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-8">
           <div class="flex-1">
@@ -248,9 +250,9 @@
         </div>
       </div>
     </section>
-    <section class="bg-teal-50 py-8 pr-5 pl-14 ">
+    <section class="bg-teal-50 py-8 pr-5 pl-14 dark:bg-slate-800 dark:text-white">
       <div class="flex py-3 max-w-7xl mx-auto gap-24">
-        <div class="flex-1 bg-gray-100 flex justify-center items-center w-[300px] h-[500px] ">
+        <div class="flex-1 bg-gray-100 flex justify-center items-center w-[300px] h-[500px] dark:bg-slate-800">
           <img src="/image.svg" alt="Hahu" class="w-[85%] mb-4" />
         </div>
         <div class="flex-1">
@@ -282,7 +284,7 @@
         </div>
       </div>
     </section>
-    <div class="py-14 bg-gray-100">
+    <div class="py-14 bg-gray-100 dark:bg-slate-800 dark:text-white">
       <h1 class="text-3xl font-bold text-center text-gray-800">Our Latest Statistics</h1>
 
       <div class="flex justify-center items-center gap-[10rem] py-6">
@@ -302,7 +304,7 @@
         </div>
       </div>
     </div>
-    <section class="pt-20 pb-2 bg-white px-4">
+    <section class="pt-20 pb-2 bg-white px-4 dark:bg-slate-800 dark:text-white">
       <div class="container mx-auto">
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray-800">News & Events</h2> 
@@ -324,7 +326,7 @@
             > 
               <Slide v-for="article in news" :key="article.id" v-slot="{ isActive }">
                 <div class="px-2 sm:px-4 h-full">
-                  <NewsCard :news="article" :is-active="isActive" class="h-full" />
+                  <NewsCard :news="article" :is-active="isActive" class="h-full dark:bg-slate-800" />
                 </div>
               </Slide>
 
@@ -340,7 +342,7 @@
         </div>
       </div>
     </section>
-    <div class="flex justify-center items-center pt-2 pb-12 bg-white">
+    <div class="flex justify-center items-center pt-2 pb-12 bg-white dark:bg-slate-800 dark:text-white">
       <button
         class="inline-flex items-center gap-2 bg-teal-600 text-white text-sm font-semibold py-3 px-5 rounded-md hover:bg-teal-500 transition-colors"
       >
