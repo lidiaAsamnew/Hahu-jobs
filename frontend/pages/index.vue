@@ -27,15 +27,15 @@
        <div class="mt-8 grid grid-cols-3 gap-0 max-w-sm mx-auto">
           <div>
             <p class="text-2xl font-bold text-teal-600">1019</p>
-            <p class="text-gray-600">Jobs</p>
+            <p class="text-gray-600 dark:text-gray-200">Jobs</p>
           </div>
           <div>
             <p class="text-2xl font-bold text-teal-600">318</p>
-            <p class="text-gray-600">Companies</p>
+            <p class="text-gray-600 dark:text-gray-200">Companies</p>
           </div>
           <div>
             <p class="text-2xl font-bold text-teal-600">14</p>
-            <p class="text-gray-600">Sectors</p>
+            <p class="text-gray-600 dark:text-gray-200">Sectors</p>
           </div>
        </div>
      </div>
@@ -52,8 +52,8 @@
 
       <div class="container mx-auto">
         <div class="text-center mb-12">
-          <h2 class="text-3xl font-bold text-gray-800">Featured Jobs</h2> 
-          <p class="text-gray-600 mt-2">Explore our handpicked selection of top job openings. Find your dream career match today.</p>  
+          <h2 class="text-3xl font-bold text-gray-800 dark:text-white">Featured Jobs</h2> 
+          <p class="text-gray-600 mt-2 dark:text-white">Explore our handpicked selection of top job openings. Find your dream career match today.</p>  
         </div>
 
         <p v-if="pending" class="text-center">Loading jobs...</p>

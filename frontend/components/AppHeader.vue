@@ -5,19 +5,19 @@
       <div class="flex items-center">
         <NuxtLink to="/" class="flex flex-col">
           <h1 class="text-3xl font-extrabold">
-            <span class="text-[#1F2937]">Hahu</span><span class="text-[#14B8A6]">Jobs</span>
+            <span class="text-[#1F2937] dark:text-white">Hahu</span><span class="text-[#14B8A6]">Jobs</span>
           </h1>
-          <span class="text-xs text-gray-500 -mt-1">Primary</span>
+          <span class="text-xs text-gray-500 -mt-1 dark:text-white">Primary</span>
         </NuxtLink>
       </div>
 
       <div class="hidden md:flex items-center">
         <div class="flex items-center space-x-4 text-xs font-medium">
-          <NuxtLink to="/" class="nav-link">Home</NuxtLink>
-          <NuxtLink to="/about" class="nav-link">About</NuxtLink>
-          <NuxtLink to="/jobs" class="nav-link">Jobs</NuxtLink>
-          <NuxtLink to="/post-vacancy" class="nav-link text-teal-600 font-semibold">Post Vacancy</NuxtLink>
-          <NuxtLink to="/contact" class="nav-link flex items-center gap-x-2">Contact</NuxtLink>
+          <NuxtLink to="/" class="text-gray-500 hover:text-teal-600 dark:text-white dark:hover:text-teal-500">Home</NuxtLink>
+          <NuxtLink to="/about" class="text-gray-500 hover:text-teal-600 dark:text-white dark:hover:text-teal-500">About</NuxtLink>
+          <NuxtLink to="/jobs" class="text-gray-500 hover:text-teal-600 dark:text-white dark:hover:text-teal-500">Jobs</NuxtLink>
+          <NuxtLink to="/post-vacancy" class="text-gray-500 hover:text-teal-600 dark:text-white dark:hover:text-teal-500">Post Vacancy</NuxtLink>
+          <NuxtLink to="/contact" class="text-gray-500 hover:text-teal-600 dark:text-white dark:hover:text-teal-500">Contact</NuxtLink>
           <button
             class="text-gray-500 hover:text-teal-600 focus:outline-none"
             aria-label="Toggle dark mode"
@@ -29,7 +29,7 @@
             />
           </button>
           <NuxtLink to="/login" class="bg-[#14B8A6] text-white text-xs font-semibold px-3 py-1 rounded-md hover:bg-teal-700">Login</NuxtLink>
-          <span class="text-gray-500 text-sm">or</span>
+          <span class="text-gray-500 text-sm dark:text-white">or</span>
           <NuxtLink to="/signup" class="bg-[#14B8A6] text-white text-xs font-semibold px-3 py-1 rounded-md hover:bg-teal-700">Sign up</NuxtLink>
         </div>
       </div>
