@@ -160,7 +160,7 @@
             v-for="company in topCompanies"
             :key="company.id"
             :company="company"
-            class="dark:bg-slate-800"
+            class="dark:bg-slate-50"
           />
         </NuxtMarquee>
 

@@ -19,7 +19,7 @@
           <NuxtLink to="/post-vacancy" class="text-gray-500 hover:text-teal-600 dark:text-white dark:hover:text-teal-500">Post Vacancy</NuxtLink>
           <NuxtLink to="/contact" class="text-gray-500 hover:text-teal-600 dark:text-white dark:hover:text-teal-500">Contact</NuxtLink>
           <button
-            class="text-gray-500 hover:text-teal-600 focus:outline-none"
+            class="text-gray-500 hover:text-teal-600 focus:outline-none dark:text-white dark:hover:text-teal-500"
             aria-label="Toggle dark mode"
             @click="setColorTheme(useColorMode().preference === 'dark' ? 'light' : 'dark')"
           >
