@@ -1,6 +1,6 @@
 <template>
 
-  <a :href="sector.link" class="group block bg-white rounded-xl shadow-sm p-6 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border border-transparent hover:border-gray-200">
+  <a :href="sector.link" class="group block bg-white rounded-xl shadow-sm p-4 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border border-transparent hover:border-gray-200">
     
     <img 
       :src="sector.image" 
