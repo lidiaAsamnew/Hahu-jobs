@@ -9,6 +9,8 @@ export default defineNuxtConfig({
     '@nuxt/icon',
     'vue3-carousel-nuxt',
     'nuxt-marquee',
+    'nuxt-headlessui',
+    'floating-vue/nuxt',
   ],
   colorMode: {
       classSuffix: ''

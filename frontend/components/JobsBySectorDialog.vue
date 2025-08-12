@@ -2,7 +2,7 @@
   <TransitionRoot appear :show="isOpen" as="template">
     <Dialog as="div" @close="closeModal" class="relative z-50">
       
-      <!-- Backdrop -->
+     
       <TransitionChild
         as="template"
         enter="duration-300 ease-out"
@@ -15,7 +15,7 @@
         <div class="fixed inset-0 bg-black/30" />
       </TransitionChild>
 
-      <!-- Modal container -->
+    
       <div class="fixed inset-0 overflow-y-auto">
         <div class="flex min-h-full items-center justify-center p-4">
           <TransitionChild
@@ -28,8 +28,7 @@
             leave-to="opacity-0 scale-95"
           >
             <DialogPanel class="w-full max-w-6xl rounded-2xl bg-white p-6 shadow-xl">
-              
-              <!-- Header -->
+            
               <DialogTitle class="text-lg font-medium text-gray-900 flex justify-between items-center">
                 <span>Jobs by sector</span>
                 <button @click="closeModal" class="text-gray-400 hover:text-gray-600">
@@ -37,7 +36,6 @@
                 </button>
               </DialogTitle>
 
-              <!-- View All -->
               <div class="text-right mt-3">
                 <a 
                   href="#" 
@@ -48,7 +46,7 @@
                 </a>
               </div>
 
-              <!-- Cards -->
+       
               <div v-if="sectors" class="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
                 <SectorInfoCard 
                   v-for="sector in sectors" 
