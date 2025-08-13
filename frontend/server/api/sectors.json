@@ -1,16 +1,114 @@
 [
-  { "id": 1, "name": "Natural Science", "jobCount": 25, "image": "/natural-science.svg", "link": "#" },
-  { "id": 2, "name": "Business", "jobCount": 210, "image": "/business.svg", "link": "#" },
-  { "id": 3, "name": "Creative Arts", "jobCount": 6, "image": "/creative-art.svg", "link": "#" },
-  { "id": 4, "name": "Education", "jobCount": 109, "image": "/education.svg", "link": "#" },
-  { "id": 5, "name": "Hospitality", "jobCount": 28, "image": "/hospitality.svg", "link": "#" },
-  { "id": 6, "name": "L and M Skilled", "jobCount": 62, "image": "low-and-medium-skilled-worker.svg", "link": "#" },
-  { "id": 7, "name": "Transportation", "jobCount": 32, "image": "/transport-and-logistics.svg", "link": "#" },
-  { "id": 8, "name": "Engineering", "jobCount": 134, "image": "/engineering.svg", "link": "#" },
-  { "id": 9, "name": "Finance", "jobCount": 133, "image": "/finance.svg", "link": "#" },
-  { "id": 10, "name": "Legal Services", "jobCount": 8, "image": "/legal-service.svg", "link": "#" },
-  { "id": 11, "name": "ICT", "jobCount": 46, "image": "/ict.svg", "link": "#" },
-  { "id": 12, "name": "Health Care", "jobCount": 62, "image": "/health-care.svg", "link": "#" },
-  { "id": 13, "name": "Manufacturing", "jobCount": 1, "image": "/manufacturing.svg", "link": "#" },
-  { "id": 14, "name": "Social Science", "jobCount": 30, "image": "/social-science.svg", "link": "#" }
+  {
+    "id": 1,
+    "name": "Natural Science",
+    "jobCount": 25,
+    "image": "/natural-science.svg",
+    "link": "#",
+    "description": "Natural science concerned with the description, prediction, and understanding of natural phenomena, based on empirical evidence from observation and experimentation. The major natural science studies are Chemistry, astronomy, Earth science, physics, and biology."
+  },
+  {
+    "id": 2,
+    "name": "Business",
+    "jobCount": 210,
+    "image": "/business.svg",
+    "link": "#",
+    "description": "Aspects of overseeing and supervising business operations. Business sector involvements are Strategic Management , Sales Management, Marketing Management, Public Relations, Operation Management, Supply Chain Management, Procurement Management and Financial & Accounting Management."
+  },
+  {
+    "id": 3,
+    "name": "Creative Arts",
+    "jobCount": 6,
+    "image": "/creative-art.svg",
+    "link": "#",
+    "description": "Human creative skill and imagination, typically in a visual form suc..."
+  },
+  {
+    "id": 4,
+    "name": "Education",
+    "jobCount": 109,
+    "image": "/education.svg",
+    "link": "#",
+    "description": "Education is about teaching, learning skills and knowledge. The Educ..."
+  },
+  {
+    "id": 5,
+    "name": "Hospitality",
+    "jobCount": 28,
+    "image": "/hospitality.svg",
+    "link": "#",
+    "description": "Operations of hotels, restaurants, cruise ships, amusement parks, de..."
+  },
+  {
+    "id": 6,
+    "name": "L and M Skilled",
+    "jobCount": 62,
+    "image": "low-and-medium-skilled-worker.svg",
+    "link": "#",
+    "description": "Does not require completing a college degree or specialized training. Employment opportunities are in in different industries involve manual labor such as packager, assembler, apprentice, or farm worker."
+  },
+  {
+    "id": 7,
+    "name": "Transportation",
+    "jobCount": 32,
+    "image": "/transport-and-logistics.svg",
+    "link": "#",
+    "description": "Involves both internal and external distribution networks which incl..."
+  },
+  {
+    "id": 8,
+    "name": "Engineering",
+    "jobCount": 134,
+    "image": "/engineering.svg",
+    "link": "#",
+    "description": "Engineering sector is a career that brings together the technologica..."
+  },
+  {
+    "id": 9,
+    "name": "Finance",
+    "jobCount": 133,
+    "image": "/finance.svg",
+    "link": "#",
+    "description": "General management principles to financial resources of the enterprises. financial management is the work done by an accounting department dealing with and analyzing money and investments for a person or a business to help make business decisions ."
+  },
+  {
+    "id": 10,
+    "name": "Legal Services",
+    "jobCount": 8,
+    "image": "/legal-service.svg",
+    "link": "#",
+    "description": "services involving legal or law related matters like issue of legal opinion, pleading , consultancy and defending of law suits by a lawyer or attorney practicing law related services."
+  },
+  {
+    "id": 11,
+    "name": "ICT",
+    "jobCount": 46,
+    "image": "/ict.svg",
+    "link": "#",
+    "description": "ICT sector professionals conduct research, plan, design, support ana..."
+  },
+  {
+    "id": 12,
+    "name": "Health Care",
+    "jobCount": 62,
+    "image": "/health-care.svg",
+    "link": "#",
+    "description": "Health care enhance quality of life by enhancing health promotion, d..."
+  },
+  {
+    "id": 13,
+    "name": "Manufacturing",
+    "jobCount": 1,
+    "image": "/manufacturing.svg",
+    "link": "#",
+    "description": "Manufacturing is a production sector for all products. This sector combines many different forms of engineering, including electrical, mechanical, industrial, and material sciences.It is well regarded job with a strong career outlook and works on integrating the facilities and systems for producing quality products."
+  },
+  {
+    "id": 14,
+    "name": "Social Science",
+    "jobCount": 30,
+    "image": "/social-science.svg",
+    "link": "#",
+    "description": "Social science focus on the study of society and the relationship am..."
+  }
 ]

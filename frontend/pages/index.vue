@@ -76,7 +76,7 @@
               class="pb-12" 
             >
               <Slide v-for="job in jobs" :key="job.id">
-                <div class="px-2 sm:px-4 h-full">
+                <div class="px-0 sm:px-4 h-full">
                   <JobCard :job="job" class="h-full dark:bg-slate-800" />
                 </div>
               </Slide>
