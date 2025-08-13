@@ -2,3 +2,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.v-popper--theme-job-popover .v-popper__inner {
+  background: #ffffff;
+  color: black;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.v-popper--theme-job-popover {
+
+  --v-popper-arrow-size: 10px;
+}
+
+.v-popper--theme-job-popover .v-popper__arrow-outer {
+ 
+  border-color: #e5e7eb;
+}
+
+.v-popper--theme-job-popover .v-popper__arrow-inner {
+
+  border-color: white;
+}

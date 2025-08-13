@@ -1,5 +1,6 @@
 <template>
-  <div class="group relative bg-white rounded-lg shadow-md hover:shadow-sm transition-shadow duration-300 text-left border border-gray-100 hover:border-2 hover:border-teal-600 flex flex-col">
+ 
+  <div class="group relative bg-white rounded-lg shadow-md hover:shadow-sm transition-shadow duration-300 text-left border border-gray-100 hover:border-2 hover:border-teal-600 flex flex-col h-full">
 
     <div class="flex justify-between items-center">
       <span class="mt-1 text-sm text-gray-500 flex items-center gap-x-1.5 dark:text-gray-50">
@@ -7,7 +8,7 @@
         {{ job.daysLeft }} Days Left
       </span>
       <div class="flex items-center gap-x-1">
-        <span class="text-teal-600  flex items-center justify-center dark:text-gray-50">
+        <span class="text-teal-600 flex items-center justify-center dark:text-gray-50">
           <Icon name="uil:bookmark" class="h-6 w-6" />
         </span>
         <span class="inline-flex items-center gap-1 bg-teal-600 text-white text-xs font-semibold px-3 py-1 rounded-tr-md rounded-bl-md"><img src="/cards-top.svg" alt="Logo" class="w-4 h-4" />Featured</span>
@@ -16,11 +17,25 @@
 
     <div class="flex gap-x-5">
    
-      <div class="flex flex-col items-center pt-14  px-2">
-        <img :src="job.companyLogo" :alt="job.companyName" class="w-16 h-16 rounded-md border p-1 object-contain" />
-        <p class="text-sm text-gray-500 mt-2 text-center dark:text-gray-50">{{ job.companyName }}</p>
-      </div>
+  
+      <VDropdown
+        theme="job-popover"
+        placement="right-start"
+        :distance="12"
+        :triggers="['hover']"
+        :delay="100"
+      >
+   
+        <div class="flex flex-col items-center pt-14  px-2">
+          <img :src="job.companyLogo" :alt="job.companyName" class="w-16 h-16 rounded-md border p-1 object-contain" />
+          <p class="text-sm text-gray-500 mt-2 text-center dark:text-gray-50">{{ job.companyName }}</p>
+        </div>
 
+        <template #popper>
+          <JobPopover :job="job" />
+        </template>
+      </VDropdown>
+     
       <div class="flex-1 pt-2">
         <h3 class="text-md font-bold text-gray-800 leading-tight mb-2 dark:text-white">{{ job.title }}</h3>
         <ul class="space-y-1 text-sm text-gray-600 dark:text-white">
@@ -71,8 +86,7 @@
         </button>
       </div>
     </div>
-
-   
+    
     <div class="flex justify-between items-center px-6 pb-4 text-gray-500 text-sm dark:text-gray-50">
       <div class="flex items-center gap-x-1">
         <Icon name="uil:eye" class="h-4 w-4" />
@@ -87,6 +101,8 @@
 </template>
 
 <script setup>
+import JobPopover from './JobPopover.vue'
+
 defineProps({
   job: {
     type: Object,
