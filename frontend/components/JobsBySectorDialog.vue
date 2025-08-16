@@ -41,13 +41,13 @@
             
               </div>
 
-              <a 
-                href="#" 
+              <NuxtLink 
+                to="/" 
                 class="inline-flex items-center gap-2 text-teal-600 border border-teal-600 rounded-md px-4 py-2 text-sm font-semibold hover:bg-teal-50"
               >
                 View All
                 <Icon name="uil:arrow-right" class="h-4 w-4" />
-              </a>
+              </NuxtLink>
             </div>
 
             

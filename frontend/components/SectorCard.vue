@@ -1,6 +1,9 @@
 <template>
 
-  <a :href="sector.link" class="group block bg-white rounded-xl shadow-sm p-4 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border border-transparent hover:border-gray-200">
+  <NuxtLink 
+    :to="`/sectors/${sector.id}`" 
+    class="group block bg-white rounded-xl shadow-sm p-4 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border border-transparent hover:border-gray-200"
+  >
     
     <img 
       :src="sector.image" 
@@ -15,7 +18,7 @@
     <p class="text-gray-500 text-sm mt-1">
       {{ sector.jobCount }} Open positions
     </p>
-  </a>
+  </NuxtLink>
 </template>
 
 <script setup>
@@ -23,6 +26,7 @@ defineProps({
   sector: {
     type: Object,
     required: true
+   
   }
 })
 </script>

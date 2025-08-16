@@ -1,9 +1,9 @@
 <template>
  
-  <div class="group relative bg-white rounded-lg shadow-md hover:shadow-sm transition-shadow duration-300 text-left border border-gray-100 hover:border-2 hover:border-teal-600 flex flex-col h-full">
+  <div class="group relative bg-white rounded-lg shadow-md hover:shadow-sm transition-shadow duration-300 text-left  hover:border-2 hover:border-teal-600 flex flex-col h-full dark:bg-slate-700">
 
     <div class="flex justify-between items-center">
-      <span class="mt-1 text-sm text-gray-500 flex items-center gap-x-1.5 dark:text-gray-50">
+      <span class="mt-1 text-sm text-gray-500 flex items-center gap-x-1.5 dark:text-gray-300">
         <Icon name="uil:calendar-alt" class="h-4 w-4" />
         {{ job.daysLeft }} Days Left
       </span>
@@ -37,27 +37,27 @@
       </VDropdown>
      
       <div class="flex-1 pt-2">
-        <h3 class="text-md font-bold text-gray-800 leading-tight mb-2 dark:text-white">{{ job.title }}</h3>
-        <ul class="space-y-1 text-sm text-gray-600 dark:text-white">
+        <h3 class="text-md font-bold text-gray-800 leading-tight mb-2 dark:text-gray-50">{{ job.title }}</h3>
+        <ul class="space-y-1 text-xs text-gray-600 dark:text-gray-200">
           <li class="flex items-center gap-x-1">
-            <Icon name="uil:briefcase-alt" class="h-5 w-5 text-teal-600 dark:text-gray-50" />
-            <span>{{ job.category }}</span>
+            <Icon name="uil:briefcase-alt" class="h-5 w-5 text-teal-600 dark:text-gray-300" />
+            <span class="text-xs text-gray-600 dark:text-gray-300">{{ job.category }}</span>
           </li>
            <li class="py-1 flex items-center gap-x-1 dark:text-white">
-            <Icon name="uil:corner-down-right" class="h-5 w-5 text-teal-600 dark:text-gray-50" />
-            <span>{{ job.category}}</span>
+            <Icon name="uil:corner-down-right" class="h-5 w-5 text-teal-600 dark:text-gray-300" />
+            <span class="text-xs text-gray-600 dark:text-gray-300">{{ job.category}}</span>
           </li>
           <li class="flex items-center gap-x-1 dark:text-white">
-            <Icon name="uil:map-marker" class="h-5 w-5 text-teal-600 dark:text-gray-50" />
-            <span>{{ job.location }}</span>
+            <Icon name="uil:map-marker" class="h-5 w-5 text-teal-600 dark:text-gray-300" />
+            <span class="text-xs text-gray-600 dark:text-gray-300">{{ job.location }}</span>
           </li>
           <li class="flex items-center gap-x-1 dark:text-gray-50">
-            <Icon name="uil:bag" class="h-5 w-5 text-teal-600 dark:text-gray-50" />
-            <span>{{ job.experience }} years</span>
+            <Icon name="uil:bag" class="h-5 w-5 text-teal-600 dark:text-gray-300" />
+            <span class="text-xs text-gray-600 dark:text-gray-300">{{ job.experience }} years</span>
           </li>
           <li class="flex items-center gap-x-1 dark:text-gray-200">
-            <Icon name="uil:users-alt" class="h-5 w-5 text-teal-600 dark:text-gray-50" />
-            <span>{{ job.positions }} Positions</span>
+            <Icon name="uil:users-alt" class="h-5 w-5 text-teal-600 dark:text-gray-300" />
+            <span class="text-xs text-gray-600 dark:text-gray-300">{{ job.positions }} Positions</span>
           </li>
         </ul>
       </div>
@@ -71,14 +71,14 @@
     </div>
 
     <div class="px-6">
-      <p class="border-t pt-4 text-sm text-gray-600 leading-relaxed line-clamp-3 dark:text-gray-50">
+      <p class="border-t pt-4 text-sm text-gray-600 leading-relaxed line-clamp-3 dark:text-gray-400">
         {{ job.description }}
       </p>
     </div>
    
     <div class="px-6 pb-5 pt-5 mt-auto flex justify-center items-center">
       <div class="flex items-center gap-x-3">
-        <button class="bg-gray-100 text-gray-700 text-sm font-semibold py-1 px-2 rounded-md hover:bg-gray-200 ">
+        <button class="bg-gray-100 text-gray-700 text-sm font-semibold py-1 px-2 rounded-md hover:bg-gray-200 dark:bg-slate-600 dark:text-gray-50 dark:hover:bg-slate-500">
           Read More
         </button>
         <button class="bg-teal-500 text-white text-sm font-semibold py-1 px-2 rounded-md hover:bg-teal-600">

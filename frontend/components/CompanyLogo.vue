@@ -1,5 +1,5 @@
 <template>
-  <div class="flex-shrink-0 mx-4 h-28 w-44 bg-white rounded-lg shadow-sm flex items-center justify-center p-4">
+  <div class="flex-shrink-0 mx-4 h-28 w-28 bg-white rounded-lg shadow-sm flex items-center justify-center p-1">
     <img 
       :src="company.logo" 
       :alt="company.name" 

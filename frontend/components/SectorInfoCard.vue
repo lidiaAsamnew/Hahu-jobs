@@ -1,6 +1,6 @@
 <template>
 
-  <NuxtLink :to="`/jobs?sid=${sector.id}`" class="group block bg-gray-100 rounded-md p-2 transition-all hover:bg-teal-50 hover:shadow-md">
+  <NuxtLink :to="`/sectors/${sector.id}`" class="group block bg-gray-100 rounded-md p-2 transition-all hover:bg-teal-50 hover:shadow-md">
     <div class="flex items-start gap-x-4">
  
       <div class="mt-6 bg-teal-100 p-2 rounded-md">
@@ -30,6 +30,7 @@ defineProps({
   sector: {
     type: Object,
     required: true
+  
   }
 })
 </script>

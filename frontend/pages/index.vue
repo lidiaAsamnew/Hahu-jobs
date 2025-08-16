@@ -2,8 +2,8 @@
   <div class="bg-[#F0F5F7] dark:bg-slate-800 dark:text-white">
     <section class="text-center pt-12 pb-20 px-4">
       <div class="container mx-auto">
-        <h1 class="text-4xl md:text-3xl font-bold text-gray-800">All Ethiopian Jobs in One Place.</h1>
-        <p class="text-sm font-bold text-gray-900 mt-2 mb-8">Find career opportunities in Ethiopia</p>
+        <h1 class="text-4xl md:text-3xl font-bold text-gray-800 dark:text-white">All Ethiopian Jobs in One Place.</h1>
+        <p class="text-sm font-bold text-gray-900 mt-2 mb-8 dark:text-white">Find career opportunities in Ethiopia</p>
          <div class="flex justify-center">
             <div class="relative text-black font-bold">
               <span class="absolute inset-y-0 left-0 flex items-center pl-3">
@@ -46,7 +46,6 @@
         <img src="/job.svg" alt="Hero Image" class="w-full h-auto object-cover" />
       </div>
     </section>
-
     
     <section class="py-20 px-2 md:px-3">
 
@@ -69,8 +68,8 @@
               :wrap-around="true"
               :autoplay="4000"
               :breakpoints="{
-                640: { itemsToShow: 1},
-                1024: { itemsToShow: 2 },
+                640: { itemsToShow: 1.5},
+                1024: { itemsToShow: 2.5 },
                 1280: { itemsToShow: 3 },
               }"
               class="pb-12" 
@@ -96,11 +95,11 @@
        </div>
       </div>
     </section>
-    <section class="py-8 bg-[#F0F5F7] px-16  dark:bg-slate-800 dark:text-white">
+    <section class="py-8 bg-[#F0F5F7] px-4 md:px-8 lg:px-16 dark:bg-slate-800 dark:text-white">
         <div class="mx-auto w-full">
           <div class="text-center mb-12">
-            <h2 class="text-3xl font-bold text-gray-800">Career sectors</h2>
-            <p class="text-gray-600 mt-2 max-w-3xl mx-auto">
+            <h2 class="text-3xl font-bold text-gray-800 dark:text-white">Career sectors</h2>
+            <p class="text-gray-600 dark:text-gray-300 mt-2 max-w-3xl mx-auto">
               Based on the local labor market trend in Ethiopia we categorize our vacancies into fourteen sectors
             </p>
           </div>
@@ -108,14 +107,14 @@
           <p v-if="sectorsPending" class="text-center">Loading sectors...</p>
           <p v-else-if="sectorsError" class="text-center text-red-500">Could not load sectors.</p>
 
-          <div v-else-if="sectors" class="flex flex-wrap justify-center -mx-3">
+          <div v-else-if="sectors" class="flex flex-wrap justify-center -mx-1.5">
+           
             <div
               v-for="sector in sectors"
               :key="sector.id"
-              class="px-1.5 mb-5"
-              style="flex: 0 0 16.6667%; max-width: 16.6667%;"
+              class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6 px-1.5 mb-5"
             >
-              <SectorCard :sector="sector" class="dark:bg-slate-800" />
+              <SectorCard :sector="sector" class="dark:bg-slate-700" />
             </div>
           </div>
         </div>
@@ -151,7 +150,7 @@
         <p v-else-if="companiesError" class="text-center text-red-500">Could not load companies.</p>
         <NuxtMarquee
           v-else-if="topCompanies"
-          :speed="50"
+          :speed="100"
           :auto-fill="true"
           :pause-on-hover="true"
         >
@@ -162,6 +161,7 @@
             :company="company"
             class="dark:bg-slate-50"
           />
+          <div class="w-14"></div>
         </NuxtMarquee>
 
       </div>

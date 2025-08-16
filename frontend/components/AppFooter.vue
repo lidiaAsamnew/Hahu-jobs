@@ -1,18 +1,18 @@
 <template>
-  <footer class="bg-white pt-24 dark:bg-slate-800 dark:text-white">
+  <footer class="bg-white pt-24 dark:bg-slate-900 dark:text-white dark:border-t border-gray-400">
     <div class="container mx-auto px-4 lg:px-4">
       <div class="grid grid-cols-1 md:grid-cols-12 gap-x-6 gap-y-12">
         
         <div class="md:col-span-2 pt-14">
-          <h3 class="text-base font-semibold text-gray-900  underline">Get Started</h3>
+          <h3 class="text-base font-semibold text-gray-900  underline dark:text-gray-300">Get Started</h3>
           <ul class="space-y-0 mt-5">
-            <li><NuxtLink to="/signup" class="text-sm text-gray-700 hover:text-teal-600">Sign up</NuxtLink></li>
-            <li><NuxtLink to="/login" class="text-sm text-gray-700 hover:text-teal-600">Login</NuxtLink></li>
+            <li><NuxtLink to="/signup" class="text-sm text-gray-700 hover:text-teal-600 dark:text-gray-300">Sign up</NuxtLink></li>
+            <li><NuxtLink to="/login" class="text-sm text-gray-700 hover:text-teal-600 dark:text-gray-300">Login</NuxtLink></li>
           </ul>
         </div>
 
         <div class="md:col-span-2 pt-14">
-          <h3 class="text-base font-semibold text-gray-900 underline">Quick links</h3>
+          <h3 class="text-base font-semibold text-gray-900 underline dark:text-gray-300">Quick links</h3>
           <ul class="space-y-0 mt-5">
             <li><NuxtLink to="/hahu-io" class="text-sm text-gray-700 hover:text-teal-600">HahuJobs IO</NuxtLink></li>
             <li><NuxtLink to="/minab-tech" class="text-sm text-gray-700 hover:text-teal-600">Minab Tech</NuxtLink></li>
@@ -25,14 +25,14 @@
             alt="MINAB IT Solutions Logo" 
             class="w-40 mb-5"
           >
-          <p class="text-gray-600 leading-relaxed text-sm">
+          <p class="text-gray-600 leading-relaxed text-sm dark:text-gray-300">
             HaHuJobs is a cloud based product owned and managed by a technology consulting firm called Minab IT solutions PLC. Minab was founded in 2014 and has an extensive experience in software development for the past nine years.
           </p>
         </div>
 
         <div class="md:col-span-3 pt-10 pl-12">
-          <h3 class="font-semibold text-base mb-4 text-gray-700">Powered by</h3>
-          <h1 class="text-3xl font-extrabold"><span class="text-[#1F2937]">Hahu</span><span class="text-[#14B8A6]">Jobs</span></h1>
+          <h3 class="font-semibold text-base mb-4 text-gray-700 dark:text-gray-300">Powered by</h3>
+          <h1 class="text-3xl font-extrabold"><span class="text-[#1F2937] dark:text-gray-300">Hahu</span><span class="text-[#14B8A6]">Jobs</span></h1>
           <p class="text-md mt-1 text-gray-700">አስቸኳይ ክፍት የሥራ መደብ</p>
         </div>
       </div>

@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
+    "@vueform/slider": "^2.1.10",
     "floating-vue": "^5.2.2",
     "nuxt": "^4.0.1",
     "nuxt-marquee": "^1.0.4",
