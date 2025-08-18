@@ -1,7 +1,7 @@
 <template>
   <header class="fixed w-full top-0 z-30 backdrop-filter backdrop-blur-md dark:shadow-black">
-    <div data-headlessui-state class="shadow xl:shadow-none" data-n-ids="{&quot;nE3KxD8SGyR-0&quot;:&quot;nE3KxD8SGyR-0&quot;,&quot;nE3KxD8SGyR-1&quot;:&quot;nE3KxD8SGyR-1&quot;}">
-      <div class="limitWidth centerContent px-4 xl:px-6 md:px-8">
+    <div data-headlessui-state class="shadow xl:shadow-none">
+      <div class="limitWidth centerContent px-2 xl:px-4 md:px-6">
         <div class="flex justify-between h-14">
           <div class="flex">
             <NuxtLink aria-current= "page" to="/" class="router-link-active router-link-exact-active flex-shrink-0 flex items-center">
@@ -22,31 +22,31 @@
               </div>
             </NuxtLink>
           </div>
-          <div class="hidden xl:ml-6 xl:flex xl:items-center xl:space-x-4">
+          <div class="hidden xl:ml-6 xl:flex xl:items-center xl:space-x-3">
             <div class="hidden xl:ml-6 xl:flex xl:items-center text-center xl:space-x-4">
-              <NuxtLink to="/" class="router-link-active router-link-exact-active text-primary dark:text-primary font-bold inline-flex items-center px-1 pt-1  text-xs 2xl:text-lg">Home</NuxtLink>
-              <NuxtLink to="/about" class="router-link-active router-link-exact-active inline-flex items-center px-1 pt-1 text-xs 2xl:text-lg text-secondary dark:text-secondary-8 reactiveText">About</NuxtLink>
-              <NuxtLink to="/jobs" class="cursor-pointer text-secondary dark:text-secondary-8 reactiveText inline-flex items-center px-1 pt-1  text-xs 2xl:text-lg">Jobs</NuxtLink>
-              <div to="/#fixed-vacancy" class="cursor-pointer text-secondary dark:text-secondary-8 reactiveText inline-flex items-center px-1 pt-1  text-sm 2xl:text-lg">
+              <NuxtLink to="/" class="text-sm font-bold text-teal-600 px-1">Home</NuxtLink>
+              <NuxtLink to="/about" class="text-sm text-slate-600 px-1 hover:text-teal-600">About</NuxtLink>
+              <NuxtLink to="/jobs" class="text-sm text-slate-600 px-1 hover:text-teal-600">Jobs</NuxtLink>
+              <div to="/#fixed-vacancy" class="text-sm text-slate-600 px-1 hover:text-teal-600">
                 <span>Post Vacancy</span>
               </div>
-              <NuxtLink to="/contact" class="cursor-pointer text-secondary dark:text-secondary-8 reactiveText inline-flex items-center px-1 pt-1  text-sm 2xl:text-lg !cursor-alias">
+              <NuxtLink to="/contact" class="text-sm text-slate-600 px-1 hover:text-teal-600">
                 <span>contact</span>
               </NuxtLink>
                <button
-                class="text-gray-500 hover:text-teal-600 focus:outline-none dark:text-white dark:hover:text-teal-500"
+                class="pt-1 text-gray-500 hover:text-teal-600 focus:outline-none dark:text-white dark:hover:text-teal-500"
                 aria-label="Toggle dark mode"
                 @click="setColorTheme(useColorMode().preference === 'dark' ? 'light' : 'dark')"
               >
-                <Icon :name="useColorMode().preference === 'dark' ? 'heroicons:sun' : 'heroicons:moon'" class="h-4 w-4"/>
+                <Icon :name="useColorMode().preference === 'dark' ? 'heroicons:sun' : 'heroicons:moon'" class="h-3.5 w-3.5"/>
               </button>
-              <div class="flex items-end gap-x-4">
+              <div class="flex items-end gap-x-3">
                 <div>
-                  <NuxtLink to="/login" class="bg-[#14B8A6] text-white text-xs font-semibold px-2 py-1 rounded-md hover:bg-teal-700">Login</NuxtLink>
+                  <NuxtLink to="/login" class="bg-teal-600 text-white text-xs font-semibold px-2 py-1 rounded-md hover:bg-teal-200 hover:text-gray-500">Login</NuxtLink>
                 </div>
-                <p class="text-gray-500 text-xs dark:text-white">or</p>
+                <p class="text-gray-500 text-sm dark:text-white">or</p>
                 <div>
-                  <NuxtLink to="/login" class="bg-[#14B8A6] text-white text-xs font-semibold px-2 py-1 rounded-md hover:bg-teal-700">Login</NuxtLink>
+                  <NuxtLink to="/login" class="bg-teal-600 text-white text-xs font-semibold px-2 py-1 rounded-md hover:bg-teal-200 hover:text-gray-500">Sign up</NuxtLink>
                 </div>
               </div>
             </div>
