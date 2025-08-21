@@ -41,7 +41,7 @@
   },
   {
     "id": 6,
-    "name": "L and M Skilled",
+    "name": "Low and Medium Skilled Worker",
     "jobCount": 62,
     "image": "low-and-medium-skilled-worker.svg",
     "link": "#",
@@ -49,7 +49,7 @@
   },
   {
     "id": 7,
-    "name": "Transportation",
+    "name": "Transportation & Logistics",
     "jobCount": 32,
     "image": "/transport-and-logistics.svg",
     "link": "#",

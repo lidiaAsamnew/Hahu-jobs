@@ -2,7 +2,7 @@
   {
     "id": 1,
     "image": "/photo2.jpeg",
-    "tag": "News",
+    "tag": "News and Jobs",
     "date": "15 March 2025",
     "title": "Empowering the Next Generation: The Launch of the Champions Network",
     "description": "On the 22nd, the STEEP Project proudly launched the Champions Network, an initiative designed to empower girls to become leaders in Science, Technology, Engineering, and Mathematics (STEM). The launch was a moment, filled with enthusiasm and a shared..."
@@ -21,14 +21,47 @@
     "tag": "HaHuJobs",
     "date": "8 March 2025",
     "title": "Celebrating International Women's Day: Inspiring Inclusion",
-    "description": "On March 8th, HaHuJobs, in collaboration with the U.S. Embassy in Addis Ababa, hosted a vibrant celebration for International Women's Day 2025, embracing this year's theme: 'Inspire Inclusion' for women and girls."
+    "description": "We held a larger, wider, and bigger career fair for the second time on May 24, 2025 at Dejazmach Wondyirad High School. The event was filled with excitement as more than 400 high school girls gathered for the second STEM Career Fair, hosted by the STEEP Project. Picture a vibrant scene: girls from grades 9 to 12, not just from Dejazmach Wondyirad but also from two nearby schools, laughing, learning, and dreaming big together. Building on the energy of our first fair at Kokebe Tsibah High School, this event was all about breaking barriers, sparking inspiration, and showing these young women that a future in Science, Technology, Engineering, and Mathematics (STEM) is within their reach."
   },
   {
     "id": 4,
     "image": "/photo2.jpeg",
-    "tag": "News",
+    "tag": "HaHuJobs News",
+    "date": "15 March 2025",
+    "title": "Another Great Event for the Future Generation",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+   {
+    "id": 4,
+    "image": "/photo2.jpeg",
+    "tag": "HaHuJobs News",
+    "date": "15 March 2025",
+    "title": "Another Great Event for the Future Generation",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+   {
+    "id": 4,
+    "image": "/photo2.jpeg",
+    "tag": "HaHuJobs News",
+    "date": "15 March 2025",
+    "title": "Another Great Event for the Future Generation",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+   {
+    "id": 4,
+    "image": "/photo2.jpeg",
+    "tag": "HaHuJobs News",
+    "date": "15 March 2025",
+    "title": "Another Great Event for the Future Generation",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+  },
+  {
+    "id": 4,
+    "image": "/photo2.jpeg",
+    "tag": "HaHuJobs News",
     "date": "15 March 2025",
     "title": "Another Great Event for the Future Generation",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   }
+
 ]
