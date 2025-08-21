@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-gray-100 min-h-screen pb-10 dark:bg-slate-900">
+  <div class="bg-gray-100 min-h-screen py-7 dark:bg-slate-900">
 
     <div class="container mx-auto grid grid-cols-12">
-      
+
       <aside class="col-span-12 lg:col-span-3">
         <FiltersSidebar />
       </aside>
@@ -11,7 +11,6 @@
          <HeaderSearch />
         <div class="h-screen overflow-y-auto hide-scrollbar">
 
-        
           <div class="my-5 p-3 bg-white rounded-lg border border-gray-200 dark:bg-slate-600 dark:border-gray-600">
             
             <div v-if="sector" class="flex items-start gap-x-4">
@@ -42,9 +41,15 @@
       
           <div v-else-if="displayJobs.length > 0">
             <p class="text-sm font-semibold text-gray-800 mb-4 dark:text-white">Showing {{ displayJobs.length }} posts</p>
-            <div class="ml-14 grid grid-cols-1 md:grid-cols-2 gap-5 dark:bg-slate-900">
-              <JobCard v-for="job in displayJobs" :key="job.id" :job="job" class="dark:bg-slate-600"/>
-            </div>
+           <div class="ml-14 mr-4 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-3 dark:bg-slate-900">
+            <JobCard 
+              v-for="job in displayJobs" 
+              :key="job.id" 
+              :job="job" 
+              class="dark:bg-slate-600 w-full"
+            />
+          </div>
+
           </div>
           <div v-else class="text-center py-20 bg-white rounded-md border">
             <h3 class="text-lg font-semibold text-gray-700">No Jobs Found</h3>
