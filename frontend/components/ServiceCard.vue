@@ -7,7 +7,7 @@
       class="
         flex flex-col h-full text-left 
         bg-white rounded-xl  
-        border-2
+        border-[1.5px]
         dark:bg-slate-800
         w-[270px] min-h-[400px]
       "
@@ -25,7 +25,7 @@
         <h3 class="text-md font-bold text-teal-600 dark:text-teal-400">
           {{ service.name }}
         </h3>
-        <p class="font-body mt-2 text-sm font-light dark:text-gray-300 line-clamp-5 flex-grow">
+        <p class="font-body mt-2 text-sm font-thin dark:text-gray-300 line-clamp-5 flex-grow">
           {{ service.Description }}
         </p>
       </div>
