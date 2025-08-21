@@ -14,8 +14,8 @@
         <div class="fixed inset-0 bg-black/30" />
       </TransitionChild>
 
- 
-      <div class="fixed inset-0 overflow-y-auto">
+   
+      <div class="fixed inset-0 overflow-y-auto hide-scrollbar">
         <div class="flex min-h-full items-center justify-center p-4">
           <TransitionChild
             as="template"
@@ -26,7 +26,7 @@
             leave-from="opacity-100 scale-100"
             leave-to="opacity-0 scale-95"
           >
-            <DialogPanel class="w-full max-w-6xl rounded-md bg-white px-4 py-4 shadow-xl">
+            <DialogPanel class="w-full max-w-7xl rounded-md bg-white p-4 py-4 mt-3 pb-20 mr-0 shadow-xl">
               <div class="flex justify-between items-center">
             
               <div class="flex items-center gap-4 py-4">
@@ -51,7 +51,7 @@
             </div>
 
             
-              <div v-if="sectors" class="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-3 gap-y-6">
+              <div v-if="sectors" class="mt-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-3 gap-y-7">
                 
               
                 <SectorInfoCard 
@@ -95,7 +95,17 @@ const closeModal = () => {
   emit('close')
 }
 
-
 const { data: sectors } = await useAsyncData('sectors', () => $fetch('/api/sectors'))
-
 </script>
+
+
+<style>
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none;
+}
+</style>

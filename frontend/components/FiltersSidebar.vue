@@ -26,7 +26,6 @@
         <div class="border-t pt-5 dark:border-gray-600">
           <div class="flex items-center justify-between text-sm font-medium text-gray-700 dark:text-gray-300">
             <span class="font-bold">{{ experienceRange[0] }}</span>
-            <span class="text-gray-400 dark:text-gray-500">0-7 years of experience</span>
             <span class="text-gray-400 dark:text-gray-500">> 10</span>
           </div>
           <div class="mt-4 px-1">
@@ -37,6 +36,7 @@
               />
             </ClientOnly>
           </div>
+          <span class="pt-3 text-xs font-thin text-gray-500 dark:text-gray-500">0-7 years of experience</span>
         </div>
 
         <div class="border-t pt-5 dark:border-gray-600">

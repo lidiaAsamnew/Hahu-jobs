@@ -1,23 +1,42 @@
 <template>
-
   <NuxtLink 
     :to="`/sectors/${sector.id}`" 
-    class="group block bg-white rounded-xl shadow-sm p-4 text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border border-transparent hover:border-gray-200"
+    class="group block h-full"
   >
-    
-    <img 
-      :src="sector.image" 
-      :alt="sector.name" 
-      class="h-14 w-14 mx-auto mb-4 object-contain"
-    />
-    
-    <h3 class="font-semibold text-base text-teal-600">
-      {{ sector.name }}
-    </h3>
+    <div
+      class="
+        w-full h-44
+        bg-white rounded-xl shadow-lg 
+        cursor-pointer 
+        transition-all duration-300 ease-in-out
+        group-hover:shadow-lg group-hover:-translate-y-1
+        dark:bg-slate-800 dark:hover:shadow-teal-500/20
+      "
+    >
+      <div class="flex flex-col items-center justify-center h-full text-center gap-y-2 px-0">
 
-    <p class="text-gray-500 text-sm mt-1">
-      {{ sector.jobCount }} Open positions
-    </p>
+        <div class="flex-shrink-0">
+          <img 
+            :src="sector.image" 
+            :alt="sector.name" 
+            class="object-contain w-14 h-14 md:w-16 md:h-16"
+          />
+        </div>
+
+        <div>
+          <h3 class="text-sm font-bold text-teal-600 dark:text-teal-400">
+            {{ sector.name }}
+          </h3>
+        </div>
+
+        <div>
+          <p class="text-xs text-gray-600 dark:text-gray-300">
+            {{ sector.jobCount }} Open positions
+          </p>
+        </div>
+        
+      </div>
+    </div>
   </NuxtLink>
 </template>
 
@@ -26,7 +45,6 @@ defineProps({
   sector: {
     type: Object,
     required: true
-   
   }
 })
 </script>
